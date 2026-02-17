@@ -174,16 +174,16 @@ std::pair<int,int> current = gw.get_currentState();
 
 ## Example Results
 
-After running policy iteration on standard 3x4 grid:
+After running policy iteration on standard 3x4 grid (cost -0.1) :
 
 **Optimal Value Function V*(s):**
 ```
 ----------------------------
- 0.80 | 0.85 | 0.91 | 1.00 |
+ 0.62 | 0.80 | 1.00 | 0.00 |
 ----------------------------
- 0.75 | 0.00 | 0.72 | -1.00|
+ 0.46 | 0.00 | 0.80 | 0.00 |
 ----------------------------
- 0.70 | 0.66 | 0.62 | 0.53 |
+ 0.31 | 0.46 | 0.62 | 0.46 |
 ----------------------------
 ```
 
@@ -194,7 +194,7 @@ After running policy iteration on standard 3x4 grid:
 ========================
   U  |     |  U  |  &  |
 ========================
-  R  |  R  |  U  |  U  |
+  UR |  R  |  U  |  L  |
 ========================
 ```
 (& indicates terminal states)
